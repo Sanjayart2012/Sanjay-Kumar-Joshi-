@@ -1,0 +1,43 @@
+{
+  "name": "pc-health-doctor",
+  "version": "1.0.0",
+  "description": "An advanced diagnostic tool that runs comprehensive hardware and software scans on PCs, identifies issues, and generates easy-to-understand reports with recommended fixes.",
+  "main": "electron.js",
+  "author": "System Tools",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "build": "vite build",
+    "dist": "npm run build && electron-builder"
+  },
+  "dependencies": {
+    "@google/genai": "^1.28.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "electron": "^31.2.1",
+    "electron-builder": "^24.13.3",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.3"
+  },
+  "build": {
+    "appId": "com.systemtools.healthdoctor",
+    "productName": "PC Health Doctor",
+    "files": [
+      "dist/renderer/**/*",
+      "electron.js"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  }
+}

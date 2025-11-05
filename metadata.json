@@ -1,0 +1,5 @@
+{
+  "name": "PC Health Doctor",
+  "description": "An advanced diagnostic tool that runs comprehensive hardware and software scans on PCs, identifies issues, and generates easy-to-understand reports with recommended fixes.",
+  "requestFramePermissions": []
+}
